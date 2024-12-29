@@ -1,184 +1,164 @@
-/* Global Styles */
+/* Global CSS for Book Style */
+
+/* Resetting margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif; /* Simple, clean, and modern font */
 }
 
+/* Body styling */
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  font-size: 18px;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 20px;
-  margin: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* General Container */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+/* Section styling */
+section {
+  margin-bottom: 2rem;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #222;
-  font-family: 'Georgia', serif; /* Serif font for headings for a more classic feel */
-  margin-bottom: 20px;
-}
-
+/* Heading styles */
 h1 {
-  font-size: 2.5em;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 2em;
-  margin-top: 20px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+  font-size: 2rem;
+  color: #34495e;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-size: 1.75em;
-  margin-top: 20px;
-  color: #444;
-}
-
-h4 {
-  font-size: 1.5em;
-  margin-top: 20px;
-}
-
-h5 {
-  font-size: 1.25em;
-  margin-top: 15px;
-}
-
-h6 {
-  font-size: 1em;
-  margin-top: 10px;
+  font-size: 1.75rem;
+  color: #555;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Paragraphs */
 p {
-  font-size: 1em;
-  margin-bottom: 15px;
-  color: #555;
-}
-
-blockquote {
-  background-color: #f9f9f9;
-  border-left: 5px solid #ccc;
-  font-style: italic;
-  margin: 20px 0;
-  padding: 15px;
-}
-
-/* Links */
-a {
-  color: #007BFF;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
 /* Lists */
 ul, ol {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 1rem 0;
+  padding-left: 2rem;
 }
 
 ul li, ol li {
-  margin-bottom: 10px;
-  color: #555;
+  margin-bottom: 0.5rem;
 }
 
-/* Definitions */
-dl {
-  margin: 20px 0;
-}
-
-dt {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-dd {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  color: #666;
+/* Blockquotes */
+blockquote {
+  font-style: italic;
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
 }
 
 /* Tables */
 table {
   width: 100%;
-  margin-bottom: 20px;
   border-collapse: collapse;
+  margin: 1.5rem 0;
 }
 
-th, td {
-  padding: 12px;
-  text-align: left;
+table th, table td {
   border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
 }
 
-th {
-  background-color: #f4f4f4;
+table th {
+  background-color: #3498db;
+  color: #fff;
 }
 
-caption {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #333;
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-/* Miscellaneous */
-hr {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 20px 0;
-}
-
+/* Details and Summary */
 details {
-  margin-bottom: 20px;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
 }
 
-summary {
+details summary {
   font-weight: bold;
   cursor: pointer;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 2rem 0;
+}
+
+/* Emphasis and Strong */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Definitions */
+dl {
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 2rem;
+}
+
+/* Caption */
+caption {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Accessibility for Smaller Screens */
+@media (max-width: 600px) {
   body {
-    font-size: 16px;
+    padding: 1rem;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
   }
 
   h3 {
-    font-size: 1.5em;
-  }
-
-  .container {
-    padding: 15px;
+    font-size: 1.5rem;
   }
 }
