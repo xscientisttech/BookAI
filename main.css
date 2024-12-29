@@ -13,22 +13,29 @@ body {
   line-height: 1.6;
   background-color: #f8f8f8;
   color: #333;
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  /* padding: 2rem;
+  max-width: 800px; */
+  /* margin: auto; */
 }
 
 /* Section styling */
 section {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  /* border: 1px solid #262626; */
+  padding: 2rem 3rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+  box-shadow: 0px 5px 15px -8px #2F2F2F;
 }
 
 /* Heading styles */
 h1 {
   font-size: 2.5rem;
+  text-align: center;
   color: #2c3e50;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
 }
 
@@ -41,7 +48,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
-  color: #555;
+  color: #34495e;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -75,6 +82,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
+  table-layout: auto;
 }
 
 table th, table td {
@@ -95,15 +103,24 @@ table tbody tr:nth-child(even) {
 /* Details and Summary */
 details {
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0.75rem ;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fafafa;
+  box-shadow: 0px 4px 6px -5px #333;
 }
 
 details summary {
   font-weight: bold;
   cursor: pointer;
+}
+details summary::marker {
+  color: #262626;
+}
+details p{
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 /* Horizontal Rule */
@@ -134,7 +151,7 @@ dt {
 }
 
 dd {
-  margin-left: 2rem;
+  margin-left: 1.2rem;
 }
 
 /* Caption */
