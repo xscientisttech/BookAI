@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Simple, clean, and modern font */
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}
+
+/* General Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-family: 'Georgia', serif; /* Serif font for headings for a more classic feel */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.75em;
+  margin-top: 20px;
+  color: #444;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 1.25em;
+  margin-top: 15px;
+}
+
+h6 {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+blockquote {
+  background-color: #f9f9f9;
+  border-left: 5px solid #ccc;
+  font-style: italic;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Definitions */
+dl {
+  margin: 20px 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Miscellaneous */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+details {
+  margin-bottom: 20px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
